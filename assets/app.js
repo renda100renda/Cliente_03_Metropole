@@ -287,7 +287,7 @@
 
         function startAutoPlay() {
           stopAutoPlay();
-          autoPlayTimer = setInterval(nextSlide, 5500); // Rotação suave a cada 5.5s
+          autoPlayTimer = setInterval(nextSlide, 6500); // Rotação suave a cada 5.5s
         }
 
         function stopAutoPlay() {
