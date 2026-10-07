@@ -1316,3 +1316,39 @@
     .header-nav.scrolled {
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     }
+
+    .hero-brand-heroic-solo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #FFFFFF;
+      padding: 1rem 2.5rem;
+      border-radius: 32px;
+      border: 2px solid var(--accent, #48B4A8);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      margin-bottom: 2rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .hero-brand-heroic-solo:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.12);
+    }
+
+    .hero-brand-heroic-solo .hero-logo-img-wide {
+      height: 110px;
+      max-width: 300px;
+      width: auto;
+    }
+
+    @media (max-width: 640px) {
+      .hero-brand-heroic-solo {
+        padding: 0.85rem 1.5rem;
+        border-radius: 24px;
+      }
+
+      .hero-brand-heroic-solo .hero-logo-img-wide {
+        height: 80px;
+        max-width: 220px;
+      }
+    }
