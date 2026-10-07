@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metrópole Pet Shop e Clínica Veterinária</title>
+  <meta name="description" content="30 anos de cuidado e confiança na Vila Leopoldina. Banho e tosa premium, clínica veterinária, farmácia e planos Petlove.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Metrópole Pet Shop e Clínica Veterinária — Banho, Tosa e Cuidado Pet">
+  <meta property="og:description" content="30 anos de cuidado e confiança na Vila Leopoldina. Banho e tosa premium, clínica veterinária, farmácia e planos Petlove.">
+  <meta property="og:image" content="https://cliente-03-metropole.vercel.app/og-image.jpg">
+  <meta property="og:url" content="https://cliente-03-metropole.vercel.app/">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "PetStore", "name": "Metrópole Pet Shop e Clínica Veterinária", "image": "https://cliente-03-metropole.vercel.app/og-image.jpg", "url": "https://cliente-03-metropole.vercel.app/", "telephone": "+5511992594990", "address": {"@type": "PostalAddress", "streetAddress": "Rua Carlos Weber, 608", "addressLocality": "São Paulo", "addressRegion": "SP", "addressCountry": "BR"}}
+  </script>
+  <meta name="description" content="30 anos de cuidado e confiança na Vila Leopoldina. Banho e tosa premium, clínica veterinária, farmácia e planos Petlove.">
+  
+  <!-- Basecoat CSS + Shell CSS -->
+
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <!-- 1. HEADER STICKY -->
+  <header class="header-nav">
+    <div class="mp-container">
+      <div class="header-inner">
+        <!-- Logo Tipográfico Sem Símbolo -->
+        <a href="#inicio" class="brand-logo" aria-label="Metrópole Pet Shop e Clínica Veterinária">
+          <span class="logo-main">metrópole</span>
+          <span class="logo-sub">- pet shop -</span>
+        </a>
+
+        <!-- Menu Desktop -->
+        <nav aria-label="Navegação Principal">
+          <ul class="nav-links">
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#agendamento">Agendamento</a></li>
+            <li><a href="#diferenciais">Diferenciais</a></li>
+            <li><a href="#sobre">A Clínica</a></li>
+            <li><a href="#avaliacoes">Avaliações</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+            <li><a href="#faq">Dúvidas</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-cta-group">
+          <a href="https://wa.me/5511992594990" target="_blank" rel="noopener noreferrer" class="btn-metropole-primary" style="padding: 9px 18px; font-size: 13px;">
+            <svg class="icon-inline" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            Agendar
+          </a>
+
+          <!-- Botão Hamburguer Mobile -->
+          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu de navegação">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Menu gaveta mobile -->
+      <div class="mobile-drawer" id="mobileDrawer">
+        <a href="#servicos" class="mobile-link">Serviços</a>
+        <a href="#agendamento" class="mobile-link">Agendamento WhatsApp</a>
+        <a href="#diferenciais" class="mobile-link">Por que o Metrópole</a>
+        <a href="#sobre" class="mobile-link">A Clínica e Equipe</a>
+        <a href="#avaliacoes" class="mobile-link">Avaliações Google & Petlove</a>
+        <a href="#localizacao" class="mobile-link">Onde Estamos</a>
+        <a href="#faq" class="mobile-link">Dúvidas Frequentes</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- 2. HERO SECTION -->
+    <section class="hero-section">
+      <div class="mp-container">
+        <div class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          30 anos de cuidado e confiança na Vila Leopoldina
+        </div>
+        <h1 class="hero-title">O cuidado completo para o seu pet na <span>metrópole</span></h1>
+        <p class="hero-sub">Clínica veterinária, estética animal premium e farmácia veterinária integradas em um ambiente acolhedor e seguro para a sua família.</p>
+        
+        <div class="hero-ctas">
+          <a href="https://wa.me/5511992594990" target="_blank" rel="noopener noreferrer" class="btn-metropole-primary">
+            <svg class="icon-inline" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            Agendar Atendimento
+          </a>
+          <a href="#servicos" class="btn-metropole-outline">
+            Conhecer Serviços
+          </a>
+        </div>
+
+        <!-- Barra de Confiança Oficial -->
+        <div class="trust-bar">
+          <div class="trust-item">
+            <div class="trust-value">4,8 <span class="trust-star">★</span></div>
+            <div class="trust-label">Google (190 avaliações)</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-value">4,9 <span class="trust-star">★</span></div>
+            <div class="trust-label">Petlove (53 avaliações)</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-value">98,1%</div>
+            <div class="trust-label">Tutores que recomendam</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-value">30 Anos</div>
+            <div class="trust-label">Tradição na Leopoldina</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SERVIÇOS -->
+    <section id="servicos" class="section-spacing">
+      <div class="mp-container">
+        <div class="section-header">
+          <span class="section-kicker">Nossos Serviços</span>
+          <h2 class="section-title">Soluções completas para a saúde e o bem-estar animal</h2>
+          <p class="section-desc">Estrutura planejada com profissionais dedicados a oferecer a melhor experiência para você e seu companheiro.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Banho e Tosa -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Banho e Tosa Premium</h3>
+            <p class="service-text">Procedimentos delicados, água em temperatura agradável, toalhas esterilizadas e cosméticos de alto padrão para manter seu pet cheiroso e relaxado.</p>
+            <a href="https://wa.me/5511992594990?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20Banho%20e%20Tosa%20na%20Metr%C3%B3pole." target="_blank" rel="noopener noreferrer" class="btn-metropole-outline" style="width: fit-content; padding: 8px 16px; font-size: 13px;">Agendar Horário</a>
+          </div>
+
+          <!-- Estética Animal -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="6" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
+                <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+                <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Estética Animal</h3>
+            <p class="service-text">Tosa da raça, tosa higiênica, desidratação, hidratação de pelagem e cuidados especiais com peles sensíveis em setor de estética planejado.</p>
+            <a href="https://wa.me/5511992594990?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Est%C3%A9tica%20Animal." target="_blank" rel="noopener noreferrer" class="btn-metropole-outline" style="width: fit-content; padding: 8px 16px; font-size: 13px;">Saber Mais</a>
+          </div>
+
+          <!-- Clínica Veterinária -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Clínica Veterinária</h3>
+            <p class="service-text">Consultas de rotina, aplicação de vacinas éticas, exames e acompanhamento preventivo com médicos veterinários dedicados e transparentes.</p>
+            <a href="https://wa.me/5511992594990?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20veterin%C3%A1ria." target="_blank" rel="noopener noreferrer" class="btn-metropole-outline" style="width: fit-content; padding: 8px 16px; font-size: 13px;">Marcar Consulta</a>
+          </div>
+
+          <!-- Farmácia Veterinária -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="12" y1="8" x2="12" y2="16"></line>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Farmácia Veterinária</h3>
+            <p class="service-text">Medicamentos de procedência garantida, vermífugos, antipulgas, carrapaticidas e suplementos para o tratamento imediato do seu pet.</p>
+            <a href="https://wa.me/5511992594990?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20a%20disponibilidade%20de%20um%20medicamento." target="_blank" rel="noopener noreferrer" class="btn-metropole-outline" style="width: fit-content; padding: 8px 16px; font-size: 13px;">Consultar Remédio</a>
+          </div>
+
+          <!-- Loja e Boutique -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Produtos Selecionados</h3>
+            <p class="service-text">Rações super premium, petiscos saudáveis, brinquedos estimulantes e acessórios refinados escolhidos com rigor para atender clientes exigentes.</p>
+            <a href="https://wa.me/5511992594990?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20sobre%20ra%C3%A7%C3%B5es%20e%20produtos." target="_blank" rel="noopener noreferrer" class="btn-metropole-outline" style="width: fit-content; padding: 8px 16px; font-size: 13px;">Ver Produtos</a>
+          </div>
+
+          <!-- Planos Petlove -->
+          <div class="service-card" style="border-color: #D8B4FE;">
+            <div class="petlove-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              Rede Credenciada Oficial
+            </div>
+            <div class="service-icon-wrap" style="background:#F3E8FF; color:#7E22CE;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Planos de Saúde Petlove</h3>
+            <p class="service-text">Aceitamos os convênios da Petlove para consultas e procedimentos previstos em sua cobertura. Atendimento rápido e com autorização ágil.</p>
+            <a href="https://saude.petlove.com.br/rede-credenciada/sp/sao-paulo/metropole-pet-shop" target="_blank" rel="noopener noreferrer" class="btn-metropole-outline" style="width: fit-content; padding: 8px 16px; font-size: 13px; border-color: #C084FC; color: #7E22CE;">Ver Perfil Petlove</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. AGENDAMENTO PERSONALIZADO NO WHATSAPP (Seção Escura) -->
+    <section id="agendamento" class="section-spacing" style="padding-top: 10px;">
+      <div class="mp-container">
+        <div class="whatsapp-section">
+          <div class="section-header" style="margin-bottom: 28px;">
+            <span class="section-kicker" style="color: var(--accent-light);">Atendimento Ágil</span>
+            <h2 class="section-title" style="color: #FFFFFF;">Agende seu atendimento personalizado</h2>
+            <p class="section-desc" style="color: #D1D5DB;">Monte a combinação de serviços sob medida para o seu pet e fale diretamente com a nossa equipe pelo WhatsApp.</p>
+          </div>
+
+          <div class="whatsapp-form-wrapper">
+            <!-- Etapa 1: Tipo do Pet -->
+            <div class="booking-step">
+              <span class="form-group-label">1. Tipo do Pet</span>
+              <div class="chips-group" id="petTypeGroup" role="group" aria-label="Tipo do Pet">
+                <button type="button" class="service-chip selected" data-value="Cachorro" aria-pressed="true">Cachorro</button>
+                <button type="button" class="service-chip" data-value="Gato" aria-pressed="false">Gato</button>
+                <button type="button" class="service-chip" data-value="Outro" aria-pressed="false">Outro</button>
+              </div>
+            </div>
+
+            <!-- Etapa 2: Porte do Pet -->
+            <div class="booking-step">
+              <span class="form-group-label">2. Porte do Pet</span>
+              <div class="chips-group" id="petSizeGroup" role="group" aria-label="Porte do Pet">
+                <button type="button" class="service-chip selected" data-value="Pequeno" aria-pressed="true">Pequeno</button>
+                <button type="button" class="service-chip" data-value="Médio" aria-pressed="false">Médio</button>
+                <button type="button" class="service-chip" data-value="Grande" aria-pressed="false">Grande</button>
+              </div>
+            </div>
+
+            <!-- Etapa 3: Seleção Múltipla de Serviços e Combinações -->
+            <div class="booking-step">
+              <span class="form-group-label">3. Serviços desejados (pode escolher mais de um — ex.: banho + tosa + hidratação)</span>
+              <div class="chips-group" id="servicesChipGroup" role="group" aria-label="Serviços desejados">
+                <button type="button" class="service-chip selected" data-service="Banho" aria-pressed="true">Banho</button>
+                <button type="button" class="service-chip" data-service="Tosa" aria-pressed="false">Tosa</button>
+                <button type="button" class="service-chip" data-service="Hidratação" aria-pressed="false">Hidratação</button>
+                <button type="button" class="service-chip" data-service="Tosa Higiênica" aria-pressed="false">Tosa Higiênica</button>
+                <button type="button" class="service-chip" data-service="Consulta Veterinária" aria-pressed="false">Consulta Veterinária</button>
+                <button type="button" class="service-chip" data-service="Vacinação" aria-pressed="false">Vacinação</button>
+                <button type="button" class="service-chip" data-service="Plano Petlove" aria-pressed="false">Plano Petlove</button>
+                <button type="button" class="service-chip" id="otherServiceChip" data-service="Outro/Personalizado" aria-pressed="false">Outro / Personalizado</button>
+              </div>
+
+              <!-- Campo livre de texto para Outro / Observações -->
+              <div style="margin-top: 12px;">
+                <label class="form-group-label" for="customReq" style="font-size: 12px; color: #9CA3AF;">Detalhes ou serviço personalizado (opcional):</label>
+                <input type="text" id="customReq" class="custom-input" placeholder="Ex.: Tosa na tesoura, corte de unhas, primeira vacina de filhote...">
+              </div>
+            </div>
+
+            <!-- Etapa 4: Preferência de Dia e Período -->
+            <div class="booking-step">
+              <label class="form-group-label">4. Preferência de Atendimento</label>
+              <div class="select-grid" style="margin-bottom: 0;">
+                <div>
+                  <label class="form-group-label" for="petDaySelect" style="font-size: 12px; color: #9CA3AF;">Dia da semana</label>
+                  <select id="petDaySelect" class="custom-select">
+                    <option value="Segunda a sexta">Segunda a sexta</option>
+                    <option value="Sábado">Sábado</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="form-group-label" for="petPeriodSelect" style="font-size: 12px; color: #9CA3AF;">Período</label>
+                  <select id="petPeriodSelect" class="custom-select">
+                    <option value="Manhã">Manhã</option>
+                    <option value="Tarde">Tarde</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <label class="form-group-label">Pré-visualização da mensagem no WhatsApp</label>
+            <div class="preview-box" id="msgPreview">
+              Carregando mensagem...
+            </div>
+
+            <div style="text-align: center;">
+              <button type="button" id="sendWhatsAppBtn" class="btn-whatsapp-action" style="width: 100%; max-width: 360px;" aria-label="Enviar agendamento pelo WhatsApp">
+                <!-- SVG Ícone Oficial Completo do WhatsApp -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#FFFFFF">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+                <span id="sendWhatsAppBtnText">Enviar pelo WhatsApp ✓</span>
+              </button>
+              <div id="bookingHelpText" style="margin-top: 10px; font-size: 13px; color: #D1D5DB; transition: color 0.2s;" aria-live="polite"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. DIFERENCIAIS -->
+    <section id="diferenciais" class="section-spacing">
+      <div class="mp-container">
+        <div class="section-header">
+          <span class="section-kicker">Por que o Metrópole?</span>
+          <h2 class="section-title">A dedicação que conquistou gerações de tutores</h2>
+          <p class="section-desc">Uma história sólida construída na Vila Leopoldina com base em ética médica, carinho e respeito aos animais.</p>
+        </div>
+
+        <div class="diff-grid">
+          <div class="diff-card">
+            <div class="diff-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <div>
+              <h3>30 Anos de Experiência</h3>
+              <p>Três décadas de atuação no mesmo bairro, conhecendo de perto as famílias e suas rotinas com cuidado contínuo.</p>
+            </div>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <div>
+              <h3>Equipe Veterinária de Excelência</h3>
+              <p>Equipe de excelência — nossos médicos veterinários, tosadores e atendentes são igualmente capacitados, dedicados e seguem o mesmo padrão de qualidade e carinho no atendimento.</p>
+            </div>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div>
+              <h3>Estética Premium Planejada</h3>
+              <p>Ambiente estruturado para diminuir o estresse do animal durante o banho e a tosa, com higiene rigorosa em cada detalhe.</p>
+            </div>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            </div>
+            <div>
+              <h3>Saúde, Estética & Farmácia</h3>
+              <p>Conveniência de resolver consultas, vacinas, procedimentos estéticos e medicamentos prescritos em uma única parada.</p>
+            </div>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div>
+              <h3>Proximidade na Leopoldina</h3>
+              <p>Localização estratégica na Rua Carlos Weber, com fácil acesso para quem mora e circula na região oeste de São Paulo.</p>
+            </div>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div>
+              <h3>Credenciado Petlove</h3>
+              <p>Facilidade para clientes utilizarem seus planos de saúde veterinários com segurança e sem burocracias desnecessárias.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. SOBRE A CLÍNICA & EQUIPE -->
+    <section id="sobre" class="section-spacing" style="background: var(--light-bg);">
+      <div class="mp-container">
+        <div class="about-card">
+          <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <span class="section-kicker">Tradição & Amor pelos Animais</span>
+            <h2 class="section-title">Um espaço completo de cuidado e carinho</h2>
+            <p class="section-desc" style="margin-bottom: 24px;">
+              Desde a sua fundação, o <strong>Metrópole Pet Shop e Clínica Veterinária</strong> nasceu para oferecer aos tutores da Vila Leopoldina um atendimento que alia competência técnica à sensibilidade. Acreditamos que cada cão e gato tem sua própria personalidade e merece ser recebido com paciência e tranquilidade.
+            </p>
+          </div>
+
+          <!-- Destaque Equipe Obrigatório -->
+          <div class="team-highlight-box">
+            <h3 style="font-size: 16px; font-weight: 700; color: var(--dark); margin-bottom: 6px;">Padrão Coletivo de Excelência</h3>
+            <p style="font-size: 14px; color: var(--muted-gray); line-height: 1.6;">
+              Equipe de excelência — nossos médicos veterinários, tosadores e atendentes são igualmente capacitados, dedicados e seguem o mesmo padrão de qualidade, garantindo que o seu animalzinho receba acolhimento, segurança e os melhores cuidados em cada visita.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. AVALIAÇÕES REAIS (14 DEPOIMENTOS GOOGLE) -->
+    <section id="avaliacoes" class="section-spacing">
+      <div class="mp-container">
+        <div class="section-header">
+          <span class="section-kicker">Prova Social Real</span>
+          <h2 class="section-title">O que diz quem confia seus pets a nós</h2>
+          <p class="section-desc">Depoimentos autênticos registrados publicamente por tutores no Google Maps e no Petlove.</p>
+        </div>
+
+        <!-- Indicador Geral de Notas e Botões de Fonte -->
+        <div style="background: #FFFFFF; border: 1px solid var(--border-soft); border-radius: 16px; padding: 20px; display: flex; flex-direction: column; md:flex-row; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 24px;">
+          <div>
+            <div style="font-size: 16px; font-weight: 700; color: var(--dark);">
+              Google 4,8 ★ (190 avaliações) &nbsp;·&nbsp; Petlove 4,9 ★ (53 avaliações)
+            </div>
+            <div style="font-size: 13px; color: var(--muted-gray); margin-top: 4px;">
+              98,1% dos clientes recomendam a Metrópole Pet Shop na Vila Leopoldina.
+            </div>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px; width: 100%; md:width: auto; justify-content: flex-start;">
+            <a href="https://www.google.com/maps/search/?api=1&query=Metropole+Pet+Shop+e+Clinica+Veterinaria+Rua+Carlos+Weber+608+Vila+Leopoldina+Sao+Paulo" target="_blank" rel="noopener noreferrer" class="btn-metropole-outline" style="font-size: 13px; padding: 8px 16px;">
+              Ver avaliações no Google
+            </a>
+            <a href="https://saude.petlove.com.br/rede-credenciada/sp/sao-paulo/metropole-pet-shop" target="_blank" rel="noopener noreferrer" class="btn-metropole-outline" style="font-size: 13px; padding: 8px 16px;">
+              Ver perfil no Petlove
+            </a>
+          </div>
+        </div>
+
+        <!-- Carrossel de Avaliações -->
+        <div class="carousel-wrapper" id="reviewsCarousel">
+          <div class="carousel-track" id="carouselTrack">
+            <!-- Review 1: Maria Francisca S da Silva -->
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">"Meu pet é cliente e paciente do local. São bem atenciosos com ele. A atenção é tanta que, passando em frente, sempre ele quer entrar."</p>
+              <div>
+                <div class="review-author">Maria Francisca S da Silva</div>
+                <div class="review-source">
+                  <span>Fonte: Google Maps · Metrópole Pet Shop</span>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Metropole+Pet+Shop+e+Clinica+Veterinaria+Rua+Carlos+Weber+608+Vila+Leopoldina+Sao+Paulo" target="_blank" rel="noopener noreferrer">Ver no Google</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 2: Cláudia Keiko Ferreira -->
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">"Quero registrar meu elogio ao pet shop pelo atendimento excepcional. A equipe é sempre muito atenciosa, comprometida e demonstra verdadeiro carinho pelos animais. O serviço é impecável em todos os detalhes."</p>
+              <div>
+                <div class="review-author">Cláudia Keiko Ferreira</div>
+                <div class="review-source">
+                  <span>Fonte: Google Maps · Metrópole Pet Shop</span>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Metropole+Pet+Shop+e+Clinica+Veterinaria+Rua+Carlos+Weber+608+Vila+Leopoldina+Sao+Paulo" target="_blank" rel="noopener noreferrer">Ver no Google</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 3: Isadora Lacerda -->
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">"Incrível! Atenção especial aos animais, atendentes super atenciosos, a veterinária é super qualificada e querida! Os brinquedinhos são uma gracinha e os acessórios também! Os pets saem super cheirosos! É um pet de luxo, seu animalzinho é tratado como um príncipe ou princesa!"</p>
+              <div>
+                <div class="review-author">Isadora Lacerda</div>
+                <div class="review-source">
+                  <span>Fonte: Google Maps · Metrópole Pet Shop</span>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Metropole+Pet+Shop+e+Clinica+Veterinaria+Rua+Carlos+Weber+608+Vila+Leopoldina+Sao+Paulo" target="_blank" rel="noopener noreferrer">Ver no Google</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 4: Ricardo PINI -->
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">"Dentre todos os PetShops da Vila Leopoldina, o Metrópole é um exemplo. Ao longo dos anos, demonstra entender a demanda da região e do público, utilizando cada vez melhor o seu espaço."</p>
+              <div>
+                <div class="review-author">Ricardo PINI</div>
+                <div class="review-source">
+                  <span>Fonte: Google Maps · Metrópole Pet Shop</span>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Metropole+Pet+Shop+e+Clinica+Veterinaria+Rua+Carlos+Weber+608+Vila+Leopoldina+Sao+Paulo" target="_blank" rel="noopener noreferrer">Ver no Google</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 5: Aline de Barros Silva -->
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">"Pra mim é o melhor petshop da Vila Leopoldina. O melhor banho, melhor veterinário, melhor atendimento. Minha baby volta sempre linda!"</p>
+              <div>
+                <div class="review-author">Aline de Barros Silva</div>
+                <div class="review-source">
+                  <span>Fonte: Google Maps · Metrópole Pet Shop</span>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Metropole+Pet+Shop+e+Clinica+Veterinaria+Rua+Carlos+Weber+608+Vila+Leopoldina+Sao+Paulo" target="_blank" rel="noopener noreferrer">Ver no Google</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 6: Viviane Haddad -->
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">"O melhor Pet Shop que já fui. Minha cachorrinha volta tranquila e feliz. A Dra Cecília é maravilhosa, cuida com tanto amor dos Pets que saio de Pinheiros pra levar a Amora para o banho e consultas."</p>
+              <div>
+                <div class="review-author">Viviane Haddad</div>
+                <div class="review-source">
+                  <span>Fonte: Google Maps · Metrópole Pet Shop</span>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Metropole+Pet+Shop+e+Clinica+Veterinaria+Rua+Carlos+Weber+608+Vila+Leopoldina+Sao+Paulo" target="_blank" rel="noopener noreferrer">Ver no Google</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 7: Daniel Pinto -->
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">"Atendimento excelente. Sempre levo a Cleo lá pra banho e tosa e sempre fica perfeita. O carinho no atendimento é muito legal."</p>
+              <div>
+                <div class="review-author">Daniel Pinto</div>
+                <div class="review-source">
+                  <span>Fonte: Google Maps · Metrópole Pet Shop</span>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Metropole+Pet+Shop+e+Clinica+Veterinaria+Rua+Carlos+Weber+608+Vila+Leopoldina+Sao+Paulo" target="_blank" rel="noopener noreferrer">Ver no Google</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 8: Thalita Sampaio -->
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">"Tenho uma cachorrinha que tem muito medo de banho e tosa em Petshop. Uma amiga me indicou esse lugar e confiei. Além da Meg voltar super cheirosa e limpinha, senti que ela voltou feliz também. Super indico, todos são cuidadosos e atenciosos."</p>
+              <div>
+                <div class="review-author">Thalita Sampaio</div>
+                <div class="review-source">
+                  <span>Fonte: Google Maps · Metrópole Pet Shop</span>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Metropole+Pet+Shop+e+Clinica+Veterinaria+Rua+Carlos+Weber+608+Vila+Leopoldina+Sao+Paulo" target="_blank" rel="noopener noreferrer">Ver no Google</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 9: Andrea Moura -->
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">"Gostaria de expressar minha mais profunda gratidão a toda equipe da Metropole Petshop pelo cuidado, dedicação e profissionalismo com que trataram minha Zoe. O carinho e a atenção da Dra Cecília fizeram toda a diferença."</p>
+              <div>
+                <div class="review-author">Andrea Moura</div>
+                <div class="review-source">
+                  <span>Fonte: Google Maps · Metrópole Pet Shop</span>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Metropole+Pet+Shop+e+Clinica+Veterinaria+Rua+Carlos+Weber+608+Vila+Leopoldina+Sao+Paulo" target="_blank" rel="noopener noreferrer">Ver no Google</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 10: Fernando Tárraga -->
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">"Atendimento especial e acolhedor, tanto com o tutor quanto com o Pet, profissionais educados, qualificados e muito experientes! Ambiente cuidadosamente limpo, confortável e bem estruturado!"</p>
+              <div>
+                <div class="review-author">Fernando Tárraga</div>
+                <div class="review-source">
+                  <span>Fonte: Google Maps · Metrópole Pet Shop</span>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Metropole+Pet+Shop+e+Clinica+Veterinaria+Rua+Carlos+Weber+608+Vila+Leopoldina+Sao+Paulo" target="_blank" rel="noopener noreferrer">Ver no Google</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 11: Daniele Verdú -->
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">"Atendimento espetacular, preço justo e staff capacitado. Que sorte a minha ter encontrado esse Pet Shop!"</p>
+              <div>
+                <div class="review-author">Daniele Verdú</div>
+                <div class="review-source">
+                  <span>Fonte: Google Maps · Metrópole Pet Shop</span>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Metropole+Pet+Shop+e+Clinica+Veterinaria+Rua+Carlos+Weber+608+Vila+Leopoldina+Sao+Paulo" target="_blank" rel="noopener noreferrer">Ver no Google</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 12: Paula -->
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">"Ótimo atendimento. A equipe do pet shop é muito atenciosa. A veterinária, Dra Cecília, é excelente! Além de super competente, é gentil e explica tudo com muita clareza."</p>
+              <div>
+                <div class="review-author">Paula</div>
+                <div class="review-source">
+                  <span>Fonte: Google Maps · Metrópole Pet Shop</span>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Metropole+Pet+Shop+e+Clinica+Veterinaria+Rua+Carlos+Weber+608+Vila+Leopoldina+Sao+Paulo" target="_blank" rel="noopener noreferrer">Ver no Google</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 13: A.F. Abelleira -->
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">"Atendem o Tobias há 4 anos sempre com muita responsabilidade e carinho. Cuidam das suas vacinas e medicações. Minha recomendação de Clínica Veterinária e Pet Shop na Vila Leopoldina."</p>
+              <div>
+                <div class="review-author">A.F. Abelleira</div>
+                <div class="review-source">
+                  <span>Fonte: Google Maps · Metrópole Pet Shop</span>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Metropole+Pet+Shop+e+Clinica+Veterinaria+Rua+Carlos+Weber+608+Vila+Leopoldina+Sao+Paulo" target="_blank" rel="noopener noreferrer">Ver no Google</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 14: Gisele M. Quirino -->
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">"O atendimento é maravilhoso tanto com a gente quanto com nossos bichinhos, e a agilidade em solucionar qualquer insatisfação do cliente foi uma das coisas que mais me surpreenderam. Não vou em outro lugar e meu pet nem aceitaria."</p>
+              <div>
+                <div class="review-author">Gisele M. Quirino</div>
+                <div class="review-source">
+                  <span>Fonte: Google Maps · Metrópole Pet Shop</span>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Metropole+Pet+Shop+e+Clinica+Veterinaria+Rua+Carlos+Weber+608+Vila+Leopoldina+Sao+Paulo" target="_blank" rel="noopener noreferrer">Ver no Google</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controles do Carrossel -->
+          <div class="carousel-nav-controls">
+            <button class="carousel-arrow" id="prevReviewBtn" aria-label="Avaliação anterior">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <div class="carousel-dots" id="carouselDots"></div>
+            <button class="carousel-arrow" id="nextReviewBtn" aria-label="Próxima avaliação">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. LOCALIZAÇÃO E MAPA REAL EMBUTIDO -->
+    <section id="localizacao" class="section-spacing" style="background: var(--light-bg);">
+      <div class="mp-container">
+        <div class="section-header">
+          <span class="section-kicker">Onde Estamos</span>
+          <h2 class="section-title">Fácil de chegar na Vila Leopoldina</h2>
+          <p class="section-desc">Rua Carlos Weber, 608 — coração da Leopoldina, São Paulo.</p>
+        </div>
+
+        <div class="map-container">
+          <div class="location-details">
+            <div class="location-item">
+              <div class="location-item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <strong style="color: var(--dark); font-size: 15px; display: block;">Endereço Oficial</strong>
+                <p style="color: var(--muted-gray); font-size: 14px; margin-top: 2px;">Rua Carlos Weber, 608 — Vila Leopoldina, São Paulo - SP</p>
+              </div>
+            </div>
+
+            <div class="location-item">
+              <div class="location-item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div>
+                <strong style="color: var(--dark); font-size: 15px; display: block;">Horário de Funcionamento</strong>
+                <p style="color: var(--muted-gray); font-size: 14px; margin-top: 2px;">9h às 18h (confirme agendamentos e dias via WhatsApp)</p>
+              </div>
+            </div>
+
+            <div class="location-item">
+              <div class="location-item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div>
+                <strong style="color: var(--dark); font-size: 15px; display: block;">Telefones para Contato</strong>
+                <p style="color: var(--muted-gray); font-size: 14px; margin-top: 2px;">Fixo: (11) 3641-2680 &nbsp;·&nbsp; WhatsApp: (11) 99259-4990</p>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+              <a href="https://www.google.com/maps/search/?api=1&query=Metropole+Pet+Shop+e+Clinica+Veterinaria+Rua+Carlos+Weber+608+Vila+Leopoldina+Sao+Paulo" target="_blank" rel="noopener noreferrer" class="btn-metropole-primary" style="font-size: 13px; padding: 10px 18px;">
+                <svg class="icon-inline" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                Abrir no Google Maps
+              </a>
+              <a href="https://wa.me/5511992594990" target="_blank" rel="noopener noreferrer" class="btn-metropole-outline" style="font-size: 13px; padding: 10px 18px;">
+                Falar no WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Iframe do mapa oficial com endereço verificado -->
+          <div class="map-iframe-wrap">
+            <iframe 
+              src="https://www.google.com/maps?q=Rua%20Carlos%20Weber%20608%2C%20Vila%20Leopoldina%2C%20S%C3%A3o%20Paulo%2FSP&output=embed" 
+              title="Localização da Metrópole Pet Shop no Google Maps"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. FAQ -->
+    <section id="faq" class="section-spacing">
+      <div class="mp-container">
+        <div class="section-header">
+          <span class="section-kicker">Tire suas Dúvidas</span>
+          <h2 class="section-title">Perguntas Frequentes</h2>
+          <p class="section-desc">Confira as principais informações sobre nossos atendimentos e estrutura.</p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Onde o Metrópole Pet Shop está localizado?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              Estamos localizados na Rua Carlos Weber, 608 — Vila Leopoldina, São Paulo/SP. Um ponto tradicional, seguro e com fácil acesso para tutores de toda a região oeste.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Vocês aceitam planos de saúde da Petlove?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              Sim! Somos credenciados oficiais da rede de saúde Petlove. Você pode realizar consultas veterinárias e procedimentos cobertos pelo seu plano de forma simples e rápida.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Quais serviços estão disponíveis na clínica e pet shop?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              Oferecemos atendimento veterinário clínico preventivo, aplicação de vacinas, estética animal com banho e tosa premium (tosa da raça, higiênica e tesoura), farmácia veterinária com medicamentos e loja com rações e acessórios selecionados.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Como posso agendar um horário para o meu pet?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              O agendamento é feito de forma rápida pelo nosso WhatsApp oficial (11) 99259-4990 ou pelo telefone fixo (11) 3641-2680. Basta enviar uma mensagem com o serviço desejado.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Qual o horário de funcionamento?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              Nosso horário de funcionamento é das 9h às 18h. Recomendamos confirmar previamente horários específicos para banho, tosa e consultas veterinárias pelo WhatsApp.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Vocês possuem farmácia veterinária no local?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              Sim! Nossa farmácia dispõe de medicamentos essenciais, antiparasitários, vermífugos, suplementos e produtos de suporte, permitindo que você inicie o tratamento receitado pelo veterinário no mesmo dia.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>A equipe de profissionais é especializada?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              Sim. Nossa equipe é formada por profissionais com formação sólida, atualização contínua e paixão pelo cuidado animal. Nossos médicos veterinários, tosadores e atendentes são igualmente capacitados, dedicados e seguem o mesmo rigoroso padrão de qualidade e respeito com cada animal.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. CTA FINAL TURQUESA -->
+    <section class="section-spacing" style="padding-bottom: clamp(50px, 8vw, 84px);">
+      <div class="mp-container">
+        <div class="final-cta">
+          <h2>Seu pet merece cuidado de metrópole.</h2>
+          <p>Venha nos visitar na Rua Carlos Weber, 608 ou agende agora mesmo pelo WhatsApp com a nossa equipe.</p>
+          <a href="https://wa.me/5511992594990" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-action" style="font-size: 16px; padding: 16px 32px; background: #FFFFFF; color: var(--dark) !important;">
+            <!-- Ícone WhatsApp Oficial com SVG Integro -->
+            <svg class="icon-inline" width="24" height="24" viewBox="0 0 24 24" fill="#25D366">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            Agendar pelo WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 11. FOOTER -->
+  <footer class="site-footer">
+    <div class="mp-container">
+      <div class="footer-grid">
+        <!-- Coluna 1: Logo e Resumo -->
+        <div class="footer-col" style="grid-column: span 1.2;">
+          <a href="#inicio" class="brand-logo" style="margin-bottom: 12px;">
+            <span class="logo-main">metrópole</span>
+            <span class="logo-sub">- pet shop -</span>
+          </a>
+          <p style="font-size: 13px; color: var(--muted-gray); line-height: 1.6; margin-top: 10px;">
+            30 anos de dedicação à saúde, bem-estar e estética animal no bairro da Vila Leopoldina, São Paulo.
+          </p>
+          <div style="margin-top: 16px;">
+            <a href="https://saude.petlove.com.br/rede-credenciada/sp/sao-paulo/metropole-pet-shop" target="_blank" rel="noopener noreferrer" class="btn-metropole-outline" style="font-size: 12px; padding: 6px 12px;">
+              Ver perfil no Petlove
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Navegação -->
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#agendamento">Agendamento WhatsApp</a></li>
+            <li><a href="#diferenciais">Diferenciais</a></li>
+            <li><a href="#sobre">Nossa Equipe</a></li>
+            <li><a href="#avaliacoes">Avaliações de Clientes</a></li>
+            <li><a href="#faq">Dúvidas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Contato Verificado -->
+        <div class="footer-col">
+          <h4>Contato & Endereço</h4>
+          <ul>
+            <li>Rua Carlos Weber, 608 — Vila Leopoldina, SP</li>
+            <li>Telefone: (11) 3641-2680</li>
+            <li>WhatsApp: <a href="https://wa.me/5511992594990" target="_blank" rel="noopener noreferrer">(11) 99259-4990</a></li>
+            <li>E-mail: <a href="mailto:contato@metropolepetshop.com.br">contato@metropolepetshop.com.br</a></li>
+            <li>Horário: 9h às 18h</li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Redes Sociais -->
+        <div class="footer-col">
+          <h4>Conecte-se</h4>
+          <ul>
+            <li>
+              <a href="https://instagram.com/metropolepetshop" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 8px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5.5" ry="5.5"></rect>
+                  <circle cx="12" cy="12" r="4.2"></circle>
+                  <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"></circle>
+                </svg>
+                @metropolepetshop
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com/maps/search/?api=1&query=Metropole+Pet+Shop+e+Clinica+Veterinaria+Rua+Carlos+Weber+608+Vila+Leopoldina+Sao+Paulo" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 8px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Google Maps (4,8★)
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © <span id="curYear"></span> Metrópole Pet Shop e Clínica Veterinária. Todos os direitos reservados.
+          <div style="font-size: 12px; color: var(--accent); margin-top: 4px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 4px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Site oficial da Metrópole Pet Shop e Clínica Veterinária
+          </div>
+        </div>
+        <div>
+          Vila Leopoldina · São Paulo/SP · CNPJ e registros oficiais ativos
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÕES FLUTUANTES (Canto Inferior Direito) -->
+  <div class="floating-actions-right">
+    <!-- WhatsApp Oficial -->
+    <a href="https://wa.me/5511992594990" target="_blank" rel="noopener noreferrer" class="fab-btn fab-whatsapp" aria-label="Falar no WhatsApp oficial da Metrópole Pet Shop">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="#FFFFFF">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+    </a>
+
+    <!-- Instagram Oficial -->
+    <a href="https://instagram.com/metropolepetshop" target="_blank" rel="noopener noreferrer" class="fab-btn fab-instagram" aria-label="Acessar Instagram @metropolepetshop">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5.5" ry="5.5"></rect>
+        <circle cx="12" cy="12" r="4.2"></circle>
+        <circle cx="17.4" cy="6.6" r="1.1" fill="#FFFFFF" stroke="none"></circle>
+      </svg>
+    </a>
+  </div>
+
+  <!-- BOTÃO VOLTAR AO TOPO (Canto Inferior Esquerdo) -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Voltar ao topo da página">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- JAVASCRIPT ES2020 PURO -->
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
