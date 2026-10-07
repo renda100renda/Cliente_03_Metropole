@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metrópole Pet Shop e Clínica Veterinária</title>
+  <meta name="description" content="30 anos de cuidado e confiança na Vila Leopoldina. Banho e tosa premium, clínica veterinária, farmácia e planos Petlove.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Metrópole Pet Shop e Clínica Veterinária — Banho, Tosa e Cuidado Pet">
+  <meta property="og:description" content="30 anos de cuidado e confiança na Vila Leopoldina. Banho e tosa premium, clínica veterinária, farmácia e planos Petlove.">
+  <meta property="og:image" content="https://cliente-03-metropole.vercel.app/og-image.jpg">
+  <meta property="og:url" content="https://cliente-03-metropole.vercel.app/">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "PetStore", "name": "Metrópole Pet Shop e Clínica Veterinária", "image": "https://cliente-03-metropole.vercel.app/og-image.jpg", "url": "https://cliente-03-metropole.vercel.app/", "telephone": "+5511992594990", "address": {"@type": "PostalAddress", "streetAddress": "Rua Carlos Weber, 608", "addressLocality": "São Paulo", "addressRegion": "SP", "addressCountry": "BR"}}
+  </script>
+  <meta name="description" content="30 anos de cuidado e confiança na Vila Leopoldina. Banho e tosa premium, clínica veterinária, farmácia e planos Petlove.">
+  
+  <!-- Basecoat CSS + Shell CSS -->
+
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <!-- 1. HEADER STICKY -->
+  <header class="header-nav">
+    <div class="mp-container">
+      <div class="header-inner">
+        <!-- Logo Tipográfico Sem Símbolo -->
+        <a href="#inicio" class="brand-logo" aria-label="Metrópole Pet Shop e Clínica Veterinária">
+          <span class="logo-main">metrópole</span>
+          <span class="logo-sub">- pet shop -</span>
+        </a>
+
+        <!-- Menu Desktop -->
+        <nav aria-label="Navegação Principal">
+          <ul class="nav-links">
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#agendamento">Agendamento</a></li>
+            <li><a href="#diferenciais">Diferenciais</a></li>
+            <li><a href="#sobre">A Clínica</a></li>
+            <li><a href="#avaliacoes">Avaliações</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+            <li><a href="#faq">Dúvidas</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-cta-group">
+          <a href="https://wa.me/5511992594990" target="_blank" rel="noopener noreferrer" class="btn-metropole-primary" style="padding: 9px 18px; font-size: 13px;">
+            <svg class="icon-inline" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            Agendar
+          </a>
+
+          <!-- Botão Hamburguer Mobile -->
+          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu de navegação">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Menu gaveta mobile -->
+      <div class="mobile-drawer" id="mobileDrawer">
+        <a href="#servicos" class="mobile-link">Serviços</a>
+        <a href="#agendamento" class="mobile-link">Agendamento WhatsApp</a>
+        <a href="#diferenciais" class="mobile-link">Por que o Metrópole</a>
+        <a href="#sobre" class="mobile-link">A Clínica e Equipe</a>
+        <a href="#avaliacoes" class="mobile-link">Avaliações Google & Petlove</a>
+        <a href="#localizacao" class="mobile-link">Onde Estamos</a>
+        <a href="#faq" class="mobile-link">Dúvidas Frequentes</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- 2. HERO SECTION -->
+    <section class="hero-section">
+      <div class="mp-container">
+        <div class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          30 anos de cuidado e confiança na Vila Leopoldina
+        </div>
+        <h1 class="hero-title">O cuidado completo para o seu pet na <span>metrópole</span></h1>
+        <p class="hero-sub">Clínica veterinária, estética animal premium e farmácia veterinária integradas em um ambiente acolhedor e seguro para a sua família.</p>
+        
+        <div class="hero-ctas">
+          <a href="https://wa.me/5511992594990" target="_blank" rel="noopener noreferrer" class="btn-metropole-primary">
+            <svg class="icon-inline" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            Agendar Atendimento
+          </a>
+          <a href="#servicos" class="btn-metropole-outline">
+            Conhecer Serviços
+          </a>
+        </div>
+
+        <!-- Barra de Confiança Oficial -->
+        <div class="trust-bar">
+          <div class="trust-item">
+            <div class="trust-value">4,8 <span class="trust-star">★</span></div>
+            <div class="trust-label">Google (190 avaliações)</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-value">4,9 <span class="trust-star">★</span></div>
+            <div class="trust-label">Petlove (53 avaliações)</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-value">98,1%</div>
+            <div class="trust-label">Tutores que recomendam</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-value">30 Anos</div>
+            <div class="trust-label">Tradição na Leopoldina</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SERVIÇOS -->
+    <section id="servicos" class="section-spacing">
+      <div class="mp-container">
+        <div class="section-header">
+          <span class="section-kicker">Nossos Serviços</span>
+          <h2 class="section-title">Soluções completas para a saúde e o bem-estar animal</h2>
+          <p class="section-desc">Estrutura planejada com profissionais dedicados a oferecer a melhor experiência para você e seu companheiro.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Banho e Tosa -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Banho e Tosa Premium</h3>
+            <p class="service-text">Procedimentos delicados, água em temperatura agradável, toalhas esterilizadas e cosméticos de alto padrão para manter seu pet cheiroso e relaxado.</p>
+            <a href="https://wa.me/5511992594990?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20Banho%20e%20Tosa%20na%20Metr%C3%B3pole." target="_blank" rel="noopener noreferrer" class="btn-metropole-outline" style="width: fit-content; padding: 8px 16px; font-size: 13px;">Agendar Horário</a>
+          </div>
+
+          <!-- Estética Animal -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="6" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
+                <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+                <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Estética Animal</h3>
+            <p class="service-text">Tosa da raça, tosa higiênica, desidratação, hidratação de pelagem e cuidados especiais com peles sensíveis em setor de estética planejado.</p>
+            <a href="https://wa.me/5511992594990?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Est%C3%A9tica%20Animal." target="_blank" rel="noopener noreferrer" class="btn-metropole-outline" style="width: fit-content; padding: 8px 16px; font-size: 13px;">Saber Mais</a>
+          </div>
+
+          <!-- Clínica Veterinária -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Clínica Veterinária</h3>
+            <p class="service-text">Consultas de rotina, aplicação de vacinas éticas, exames e acompanhamento preventivo com médicos veterinários dedicados e transparentes.</p>
+            <a href="https://wa.me/5511992594990?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20veterin%C3%A1ria." target="_blank" rel="noopener noreferrer" class="btn-metropole-outline" style="width: fit-content; padding: 8px 16px; font-size: 13px;">Marcar Consulta</a>
+          </div>
+
+          <!-- Farmácia Veterinária -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="12" y1="8" x2="12" y2="16"></line>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Farmácia Veterinária</h3>
+            <p class="service-text">Medicamentos de procedência garantida, vermífugos, antipulgas, carrapaticidas e suplementos para o tratamento imediato do seu pet.</p>
+            <a href="https://wa.me/5511992594990?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20a%20disponibilidade%20de%20um%20medicamento." target="_blank" rel="noopener noreferrer" class="btn-metropole-outline" style="width: fit-content; padding: 8px 16px; font-size: 13px;">Consultar Remédio</a>
+          </div>
+
+          <!-- Loja e Boutique -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Produtos Selecionados</h3>
+            <p class="service-text">Rações super premium, petiscos saudáveis, brinquedos estimulantes e acessórios refinados escolhidos com rigor para atender clientes exigentes.</p>
+            <a href="https://wa.me/5511992594990?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20sobre%20ra%C3%A7%C3%B5es%20e%20produtos." target="_blank" rel="noopener noreferrer" class="btn-metropole-outline" style="width: fit-content; padding: 8px 16px; font-size: 13px;">Ver Produtos</a>
+          </div>
+
+          <!-- Planos Petlove -->
+          <div class="service-card" style="border-color: #D8B4FE;">
+            <div class="petlove-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              Rede Credenciada Oficial
+            </div>
+            <div class="service-icon-wrap" style="background:#F3E8FF; color:#7E22CE;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Planos de Saúde Petlove</h3>
+            <p class="service-text">Aceitamos os convênios da Petlove para consultas e procedimentos previstos em sua cobertura. Atendimento rápido e com autorização ágil.</p>
+            <a href="https://saude.petlove.com.br/rede-credenciada/sp/sao-paulo/metropole-
