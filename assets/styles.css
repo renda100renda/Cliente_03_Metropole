@@ -1115,3 +1115,30 @@
       flex-shrink: 0;
     }
   
+    /* Logo da marca no header (padrao Abelhinha: sem sombra, transparente) */
+    .brand-logo-img {
+      width: 52px;
+      height: 52px;
+      object-fit: contain;
+      flex-shrink: 0;
+      border-radius: 50%;
+      display: block;
+    }
+
+    .brand-logo-img-wide {
+      width: auto;
+      height: 48px;
+      border-radius: 0;
+      background: transparent;
+    }
+
+    @media (max-width: 640px) {
+      .brand-logo-img {
+        width: 44px;
+        height: 44px;
+      }
+
+      .brand-logo-img-wide {
+        height: 40px;
+      }
+    }
