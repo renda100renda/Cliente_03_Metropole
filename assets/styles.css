@@ -1115,10 +1115,24 @@
       flex-shrink: 0;
     }
   
-    /* Logo da marca no header (padrao Abelhinha: sem sombra, transparente) */
+
+    /* ===== Logo integrado ao site (padrao v3) ===== */
+    .brand-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      line-height: 1;
+      transition: opacity 0.2s ease;
+    }
+
+    .brand-logo:hover {
+      opacity: 0.85;
+    }
+
     .brand-logo-img {
-      width: 52px;
-      height: 52px;
+      width: 64px;
+      height: 64px;
       object-fit: contain;
       flex-shrink: 0;
       border-radius: 50%;
@@ -1127,18 +1141,44 @@
 
     .brand-logo-img-wide {
       width: auto;
-      height: 48px;
+      height: 56px;
       border-radius: 0;
-      background: transparent;
+    }
+
+    .brand-logo-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 1.1;
+    }
+
+    .brand-logo-img-footer {
+      width: 56px;
+      height: 56px;
+    }
+
+    .brand-logo-img-wide.brand-logo-img-footer {
+      width: auto;
+      height: 48px;
     }
 
     @media (max-width: 640px) {
       .brand-logo-img {
-        width: 44px;
-        height: 44px;
+        width: 48px;
+        height: 48px;
       }
 
       .brand-logo-img-wide {
+        height: 44px;
+      }
+
+      .brand-logo-img-footer {
+        width: 48px;
+        height: 48px;
+      }
+
+      .brand-logo-img-wide.brand-logo-img-footer {
+        width: auto;
         height: 40px;
       }
     }
