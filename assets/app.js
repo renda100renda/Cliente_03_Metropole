@@ -358,3 +358,33 @@
       });
     });
   
+    // ===== Efeitos de rolagem =====
+    // 1) Reveal suave nas secoes
+    (function() {
+      const targets = document.querySelectorAll('section, .service-card, .diff-card, .unit-card, .review-card, .about-card');
+      targets.forEach((el, i) => {
+        el.classList.add('reveal');
+        if (i % 3 === 1) el.classList.add('reveal-delay-1');
+        if (i % 3 === 2) el.classList.add('reveal-delay-2');
+      });
+
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+      targets.forEach(el => io.observe(el));
+    })();
+
+    // 2) Header com sombra ao rolar
+    (function() {
+      const header = document.querySelector('header.site-header') || document.querySelector('.header-nav');
+      if (!header) return;
+      window.addEventListener('scroll', () => {
+        header.classList.toggle('scrolled', window.scrollY > 10);
+      }, { passive: true });
+    })();
